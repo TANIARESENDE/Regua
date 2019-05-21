@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:tag="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </fragment>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:autofillHints="Tirar foto"
+        app:backgroundTint="@android:color/holo_green_light"
+        app:srcCompat="@drawable/ic_camera" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:autofillHints="Limpar"
+        app:backgroundTint="@color/colorAccent"
+        app:srcCompat="@drawable/ic_clear" />
+
+</FrameLayout>
